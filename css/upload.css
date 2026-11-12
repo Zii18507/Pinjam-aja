@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../asset/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tabbar {
+    border-bottom: 2px solid #5b647585;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 60px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+h7 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+.nav-item {
+    margin-left: 40px;
+}
+li {
+    align-items: center;
+    
+    list-style: none;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+
+}
+
+.dek:hover {
+    color: #2a56c6;
+    border-bottom: 3px solid #2a56c6;
+    
+}
+
+.formulir {
+    background-color: #ffff;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+    border: solid #5b6475 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.judul {
+    display: flex;
+    justify-content: start;
+    font-size: 15px;
+    border-bottom: solid #5b6475 1px;
+    padding-bottom: 10px;
+}
+
+label {
+    font-size: 13px;
+    font-family: bold, 'Poppins', sans-serif ;
+}
+
+ul {
+    padding-left: 1px;
+    
+}
+
+li {
+    padding-top: 7px;
+}
+
+input {
+    height: 25px;
+    width: 710px;
+    background-color: #f5f6fa;
+    border: solid 1px #5b6475;
+    border-radius: 5px;
+}
+
+.simpan {
+    height: 35px;
+    width: 80px;
+    margin-left: 635px;
+    background-color: black;
+    color: white;
+}
+
+.foto {
+    height: 100px;
+    width: 710px;
+}
+
+.upload {
+    margin-top: 10px;
+    height: 100px;
+    width: 710px;
+    background-color: #f5f6fa;
+    border: dashed 2px #5b6475;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.jj {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    padding-top: 20px;
+
+    
+}
