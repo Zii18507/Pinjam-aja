@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Masuk - Pinjam Aja</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="kartu">
+
+    
+    <div class="tempatLogo">
+      <img src="images/logo.png" alt="Logo Pinjam Aja" class="logo">
+    </div>
+
+    <div class="kepala">
+      <h1>Pinjam Aja</h1>
+      <p>Masuk untuk mulai meminjam barang kampus</p>
+    </div>
+
+    <form id="formLogin">
+
+      
+      <div class="bidang">
+        <label for="email">Email</label>
+        <div class="bungkusInput">
+          <img src="images/email.png" alt="" class="ikon">
+          <input type="text" id="email" placeholder="contohasyah@gmail.com">
+        </div>
+      </div>
+
+      
+      <div class="bidang">
+        <label for="password">Password</label>
+        <div class="bungkusInput">
+          <img src="images/password.png" alt="" class="ikon">
+          <input type="password" id="password" placeholder="Masukkan password">
+          <button type="button" id="tombolMata" class="tombolMata">
+            <img src="images/mata.png" alt="Lihat password" id="gambarMata">
+          </button>
+        </div>
+      </div>
+
+      <p id="pesan" class="pesan"></p>
+
+      <button type="submit" class="tombolBiru">Masuk</button>
+
+      <p class="teksBawah">Belum punya akun? <a href="register.html">Daftar</a></p>
+    </form>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

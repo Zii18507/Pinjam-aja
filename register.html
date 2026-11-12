@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Pinjam Aja</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="kartu kartuLebar">
+
+    
+    <div class="tempatLogo">
+      <img src="images/logo.png" alt="Logo Pinjam Aja" class="logo">
+    </div>
+
+    <div class="kepala">
+      <h1>Buat Akun Pinjam Aja</h1>
+      <p>Daftar untuk mulai meminjam peralatan kampus</p>
+    </div>
+
+    <form id="formDaftar">
+
+      <div class="baris2">
+        <div class="bidang">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Masukan nama lengkap">
+        </div>
+        <div class="bidang">
+          <label for="nim">NIM</label>
+          <input type="text" id="nim" placeholder="Contoh: 251301006">
+        </div>
+      </div>
+
+      <div class="baris2">
+        <div class="bidang">
+          <label for="email">Email</label>
+          <div class="bungkusInput">
+            <img src="images/email.png" alt="" class="ikon">
+            <input type="text" id="email" placeholder="contohasyah@gmail.com">
+          </div>
+        </div>
+
+        
+        <div class="bidang">
+          <label for="password">Password (min. 8 karakter)</label>
+          <div class="bungkusInput">
+            <img src="images/password.png" alt="" class="ikon">
+            <input type="password" id="password" placeholder="Buat password">
+            <button type="button" id="tombolMata" class="tombolMata">
+              <img src="images/mata.png" alt="Lihat password" id="gambarMata">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bidang">
+        <label for="alamat">Alamat Lengkap</label>
+        <textarea id="alamat" rows="2" placeholder="Alamat kos atau rumah"></textarea>
+      </div>
+
+      <p id="pesan" class="pesan"></p>
+
+      <button type="submit" class="tombolBiru">Daftar</button>
+
+      <p class="teksBawah">Sudah punya akun? <a href="login.html">Masuk</a></p>
+    </form>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
