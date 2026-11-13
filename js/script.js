@@ -9,12 +9,12 @@ if (tombolMata) {
     if (inputPassword.type == 'password') {
       
       inputPassword.type = 'text';
-      gambarMata.src = 'images/mataCoret.png';
+      gambarMata.src = '../asset/mataCoret.png';
       gambarMata.alt = 'Sembunyikan password';
     } else {
       
       inputPassword.type = 'password';
-      gambarMata.src = 'images/mata.png';
+      gambarMata.src = '../asset/mata.png';
       gambarMata.alt = 'Lihat password';
     }
   });
