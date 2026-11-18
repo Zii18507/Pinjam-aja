@@ -22,7 +22,7 @@
             <li class="nav-item">
                 <a href="../akun/login.html">Masuk</a>
                 |
-                <a href="../akun/register.html">Daftar</a>
+                <a href="../akun/register.html">Daftar</a> 
             </li>
         </ul>
         
@@ -33,6 +33,74 @@
         <input type="search" placeholder="Cari nama perlengkapan...">
         <button class="hapus" type="button" >X</button>
     </div>
+    <!--Lanjutkan isi halaman pemilihan barang si sini-->
+    <div class="search-box">
+    <input
+        type="text"
+        id="cariBarang"
+        placeholder="Cari nama barang..."
+        onkeyup="cariBarang()"
+    >
+    <button onclick="cariBarang()">Cari</button>
+</div>
+<section class="judul-halaman">
+    <h1>Pilih Barang</h1>
+    <p>Cari barang yang ingin kamu pinjam</p>
+</section>
+
+<div class="kategori">
+    <button onclick="filterBarang('semua')">Semua</button>
+    <button onclick="filterBarang('Elektronik')">Elektronik</button>
+    
+</div>
+
+<div class="daftar-barang" id="daftarBarang">
+
+    <div class="card-barang" data-kategori="Elektronik">
+        <img src="../asset/laptop.png" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>Kode: BRG001</p>
+        <p>Status: Tersedia</p>
+        <button onclick="pinjamBarang('Laptop')">Pinjam</button>
+    </div>
+
+    <div class="card-barang" data-kategori="elektronik">
+        <img src="../asset/kamera.png" alt="Kamera">
+        <h3>Kamera</h3>
+        <p>Kode: BRG002</p>
+        <p>Status: Tersedia</p>
+        <button onclick="pinjamBarang('Kamera')">Pinjam</button>
+    </div>
+
+    <div class="card-barang" data-kategori="elektronik">
+        <img src="../asset/flasdisk.png" alt="flasdisk">
+        <h3>flasdisk</h3>
+        <p>Kode: BRG003</p>
+        <p>Status: Tersedia</p>
+        <button onclick="pinjamBarang('flasdisk')">Pinjam</button>
+    </div>
+
+    <div class="card-barang" data-kategori="Elektronik">
+        <img src="../asset/keyboard.png" alt="Keyboard">
+        <h3>Keyboard</h3>
+        <p>Kode: BRG004</p>
+        <p>Status: Tersedia</p>
+        <button onclick="pinjamBarang('Keyboard')">Pinjam</button>
+    </div>
+
+    <div class="card-barang" data-kategori="Elektronik">
+        <img src="../asset/speaker.png" alt="speaker">
+        <h3>Tas</h3>
+        <p>Kode: BRG005</p>
+        <p>Status: Tersedia</p>
+        <button onclick="pinjamBarang('speaker')">Pinjam</button>
+    </div>
+
+</div>
+
+<p id="tidakDitemukan" style="display:none;">
+    Barang tidak ditemukan!
+</p>
 
 </body>
 </html>
