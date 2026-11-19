@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinjam aja</title>
-    <link rel="stylesheet" href="../css/A.css"/>
+    <link rel="stylesheet" href="../css/riwayat.css"/>
 </head>
 <body>
     <nav class="tabbar">
@@ -15,9 +15,9 @@
         <ul class="nav-links">
             <li>
                <a href="home.html">Beranda</a>
-               <a href="barang_saya.html">Barang saya</a>
-               <a href="barang_pinjaman.html">Pinjaman saya</a>
-               <a href="">Riwayat</a>  
+               <a href="manajemen_barang.html">Manajemen barang</a>
+               <a href="perpanjangan_barang.html">Perpanjangan barang</a>
+               <a href="riwayat.html">Riwayat</a>  
             </li>
             <li class="nav-item">
                 <a href="../akun/login.html">Masuk</a>
@@ -28,6 +28,85 @@
         
     </nav>
 
-    <h1>RIWAYAT MEMINJAM DAN PINJAMAN</h1>
+    <h1>RIWAYAT MEMINJAM</h1>
+
+    <di class="riwayat-wrap">
+        <div class="riwayat-head">
+            <div>
+                <p>Pantau status perizinan, batas waktu pengembalian, dan ajukan perpanjangan durasi pinjam.</p>
+            </div>
+    
+            <div class="head-btn">
+                <button class="btn-biru" onclick="window.location.href='Perpanjangan_barang.html'">+ Perpanjangan Barang</button>
+                <button class="btn-biru" onclick="window.location.href='Pemilihan_barang.html'">+ Pinjam Barang Baru</button>
+            </div>
+        </div>
+
+        
+        <div class="filter-box">
+            <input type="text" id="cariBarang" placeholder="Cari,nama alat...">
+        </div>
+
+        <div class="riwayat-main">
+            
+            <div class="card kiri">
+                <div class="card-judul">
+                    <b>Daftar Peminjaman Aktif & Terakhir</b>
+                </div>
+                <table id="tabelRiwayat">
+                    <thead>
+                        <tr>
+                            <th>Foto & Nama Barang</th>
+                            <th>Tgl Pinjam</th>
+                            <th>Tgl Kembali</th>
+                            <th>Total Biaya</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-status="menunggu" data-nama="canon eos m50">
+                            <td class="barang">
+                                <img src="../asset/kamera-canon.png" alt="canon">
+                                <div>
+                                    <b>Canon EOS M50</b>
+                                </div>
+                            </td>
+                            <td>24 Okt 2026</td>
+                            <td>27 Okt 2026</td>
+                            <td>Rp 720.000</td>
+                            <td>Menunggu Persetujuan</span></td>
+                            <td><button class="btn-kecil">Detail Tagihan</button></td>
+                        </tr>
+                        <tr data-status="pengembalian" data-nama="epson eb-x500 proyektor">
+                            <td class="barang">
+                                <img src="../asset/infocus.png" alt="infocus">
+                                <div>
+                                    <b>Epson EB-X500 Proyektor</b>
+                                </div>
+                            </td>
+                            <td>18 Okt 2026</td>
+                            <td>21 Okt 2026</td>
+                            <td>Rp 580.000</td>
+                            <td>Menunggu Pengembalian</span></td>
+                            <td><button class="btn-kecil">Pengembalian</button></td>
+                        </tr>
+                        <tr data-status="selesai" data-nama="tripod takara eco-193a">
+                            <td class="barang">
+                                <img src="../asset/Tripod.png" alt="tripod">
+                                <div>
+                                    <b>Tripod Takara ECO-193A</b><br>
+                                </div>
+                            </td>
+                            <td>10 Okt 2026</td>
+                            <td>13 Okt 2026</td>
+                            <td>Rp 25.000</td>
+                            <td>Selesai</span></td>
+                            <td><button class="btn-kecil">Unduh Bukti</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+    <script src="../js/riwayat.js"></script>
 </body>
 </html>

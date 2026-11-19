@@ -15,8 +15,8 @@
         <ul class="nav-links">
             <li>
                <a href="home.html">Beranda</a>
-               <a href="barang_saya.html">Barang saya</a>
-               <a href="barang_pinjaman.html">Pinjaman saya</a>
+               <a href="manajemen_barang.html">Manajemen barang</a>
+               <a href="perpanjangan_barang.html">Perpanjangan barang</a>
                <a href="riwayat.html">Riwayat</a> 
             </li>
             <li class="nav-item">
@@ -28,10 +28,134 @@
         
     </nav>
 
-    <div class="search-box">
-        <i class="fa-solid fa-magnifying-glass"></fa-></i>
-        <input type="search" placeholder="Cari nama perlengkapan...">
-        <button class="hapus" type="button" >X</button>
+    <form class="pecarian">
+
+        <div class="search-container">
+            <img src="../asset/search-icon.png" class="ikon">
+            <input type="search" placeholder="Cari nama perlengkapan..." class="search-bar">
+        </div>
+
+    </form>
+     <div class="container">
+        <h2 class="judul-katalog">PINJAM BARANG LEBIH MUDAH DISINI</h2>
+        <p class="urutan">Urutkan: Stok Terbanyak</p>
+
+    
+        <div class="barang-list" id="barang-list">
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/laptop.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 4 Unit</p>
+                    <h4>Laptop - Asus VivoBook Core i5</h4>
+                    <p class="deskripsi">Intel Core i5 Gen 11, RAM 8GB DDR4, 512GB SSD NVMe, Layar 14 inch FHD...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 6.500.000</b></div>
+                    <button class="btn-detail">Lihat Detail ></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/kamera-canon.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 2 Unit</p>
+                    <h4>Kamera - Canon EOS M50 Kit</h4>
+                    <p class="deskripsi">Sensor 24.1MP APS-C, 4K Video recording, Dual Pixel CMOS AF...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 7.200.000</b></div>
+                    <button class="btn-detail">Lihat Detail ></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/infocus.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 3 Unit</p>
+                    <h4>InFocus - Epson EB-X500</h4>
+                    <p class="deskripsi">Tingkat kecerahan 3600 ANSI Lumens, resolusi XGA, port HDMI/VGA...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 5.300.000</b></div>
+                    <button class="btn-detail">Lihat Detail ></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/tripod.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 3 Unit</p>
+                    <h4>Tripod - Takara ECO-193A</h4>
+                    <p class="deskripsi">Tinggi maksimal 160cm, quick release plate 3-way pan head...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 250.000</b></div>
+                    <button class="btn-detail">Lihat Detail ></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/keyboard.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 4 Unit</p>
+                    <h4>Keyboard - Logitech K120 USB</h4>
+                    <p class="deskripsi">Layout full-size standar Indonesia, anti tumpahan air (spill-resistant)...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 150.000</b></div>
+                    <button class="btn-detail">Lihat Detail ></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/flashdisk.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 12 Unit</p>
+                    <h4>Flashdisk - SanDisk Ultra 64GB</h4>
+                    <p class="deskripsi">Kecepatan transfer hingga 130MB/s USB 3.0, kapasitas 64GB...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 95.000</b></div>
+                    <button class="btn-detail">Lihat Detail ></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/speaker.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 1 Unit</p>
+                    <h4>Speaker - Portable PA Wireless</h4>
+                    <p class="deskripsi">Output audio 80W RMS, baterai tahan 8 jam, Bluetooth & AUX...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 1.800.000</b></div>
+                    <button class="btn-detail">Lihat Detail ></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-gambar">
+                    <img src="../asset/kamera-sony.png">
+                    <span class="badge">Tersedia</span>
+                </div>
+                <div class="card-isi">
+                    <p class="stok">Stok: 5 Unit</p>
+                    <h4>Kamera Sony Alpha A6400</h4>
+                    <p class="deskripsi">Real-time Eye AF, 4K HDR recording, bodi magnesium alloy...</p>
+                    <div class="harga-row"><span>Harga Acuan Resmi:</span><b>Rp 11.500.000</b></div>
+                    <button class="btn-detail ">Lihat Detail ></button>
+                </div>
+            </div>
+
+        </div>
     </div>
     <!--Lanjutkan isi halaman pemilihan barang si sini-->
     <div class="search-box">
@@ -102,5 +226,23 @@
     Barang tidak ditemukan!
 </p>
 
+<div class="popup" id="popup">
+    <div class="popup-isi">
+        <span class="popup-close" id="tutup-popup">&times;</span>
+        <img id="popup-gambar" src="">
+        <p id="popup-stok">Stok: 0 Unit</p>
+        <h3 id="popup-nama">Nama Barang</h3>
+        <p id="popup-deskripsi">Deskripsi...</p>
+        <p>Harga: <b id="popup-harga">Rp 0</b></p>
+
+        <label>Tanggal Pinjam:</label>
+        <input type="date" id="tgl-pinjam">
+        <label>Tanggal Kembali:</label>
+        <input type="date" id="tgl-kembali">
+
+        <button class="btn-detail" id="btn-pinjam">Pinjam Sekarang</button>
+    </div>
+</div>
+    <script src="../js/Pemilihan_barang.js"></script>
 </body>
 </html>
