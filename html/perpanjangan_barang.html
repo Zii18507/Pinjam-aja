@@ -1,9 +1,70 @@
-<title>Pinjam aja</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</body>
+</html>
+<title>Perpanjangan_barang</title>
+
     <link rel="stylesheet" href="..\css\upload.css"/>
 </head>
 <body>
-    <nav class="tabbar">
-        <div Class="logo">
+    <nav class="container">
+        <div Class="header">
+            <h2>Formulir Pengajuan Perpanjangan Peminjaman</h2>
+            </div>
+            <div class="content">
+                <div class="barang">
+                    Target Barang Terpilih:
+                    <h3>Asus VivoBook Core i5</h3>
+                </div>
+                <form>
+                    <label>Tanggal pengembalian saat ini</label>
+                    <input type="date" value="2026-10-23">
+                    <label>Jumlah Hari Perpanjangan</label>
+                    <div class="hari">
+                        <button type="button" onclick="pilihHari(this,1)">+1 Hari</button>
+                        <button type="button" onclick="pilihHari(this,2)">+2 Hari</button>
+                        <button type="button" onclick="pilihHari(this,3)">+3 Hari</button>
+                    </div>
+                  <label>Tanggal Pengembalian Baru</label>
+                  <input type="date" value="2026-10-25" readonly>
+                  <div class="info">
+                    Estimasi Biaya Tambahan:
+                    <b>Pajak Perpanjangan ditentukan admin</b>
+                  </div>
+
+                  <label>Alasan Perpanjangan*</label>
+                  <textarea rows="3" placeholder="Masukkan Alasan Perpanjangan"></textarea>
+
+                  <div class="info">
+                    setelah dikirim,status Perpanjangan
+                    <b>Menunggu Persetujuan Admin.</b>
+                    Tanggal baru belum berlaku sebelum disetujui.
+                  </div>
+                  <button class="kirim" type="submit">
+                    kirim permintaan perpanjangan
+                  </button>
+
+                </form>
+
+                <div class="footer">
+                    Proses verifikasi membutuhkan waktu 1-2 jam
+                </div>
+            </div>
+
+            <script>
+                function pilihHari(tombol,jumlah) {
+                    document.querySelectorAll('.hari button').forEach(b ) 
+                    b.classList.remove('active'); }
+
+                    {;
+                    tombol.classList.add('active')
+                }
+                            
+            </script>
+
             <img src="..\asset\logo c.png">
             <h7 class="h7">PINJAM AJA</h7>
         </div>
